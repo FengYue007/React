@@ -1,7 +1,6 @@
-
 function Clock() {
   React.useEffect(() => {
-    console.log('componentDidMount')
+    console.log('componentDidmount')
     return () => {
       console.log('componentWillUnmount');
     }
@@ -13,3 +12,4 @@ function Clock() {
     </div>
   )
 }
+
