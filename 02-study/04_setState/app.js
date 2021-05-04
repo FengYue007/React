@@ -43,7 +43,7 @@
 
 function Counter(props) {
   const {
-    iniCount = 0,
+    initCount = 0,
   } = props;
   let [count, setCount] = React.useState(initCount);
   const atClick = () => {
@@ -62,7 +62,7 @@ ReactDOM.render(
   <div>
   <Counter initCount= {0} />
   <Counter initCount= {1} />
-  </div>,
-
+  </div>
+  ,
   document.getElementById('app')
 );
