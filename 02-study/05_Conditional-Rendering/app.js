@@ -5,8 +5,24 @@ function GuestGreeting() {
   return <h1 className="guest">Please sign up.</h1>;
 }
 
-function App(){
+// function App(){
   /*
+  const [isLoggedIn, setLoggedIn] = React.useState(false);
+  const atClick = () => {
+    setLoggedIn(!isLoggedIn);
+  }
+  return (
+    <div className="app">
+      <button onClick={atClick}>{isLoggedIn ? '登出' : '登入'}</button>
+      {isLoggedIn ? <UserGreeting /> : <GuestGreeting />}
+      {isLoggedIn && <UserGreeting name="milkmidi" />}
+    </div>
+  )
+  // */
+// }
+
+function App(){
+  //*
   const [isLoggedIn, setLoggedIn] = React.useState(false);
   const atClick = () => {
     setLoggedIn(!isLoggedIn);
