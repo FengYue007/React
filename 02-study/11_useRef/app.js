@@ -2,7 +2,7 @@ function UseRefExample(){
   const [count, setCount] = React.useState(0);
   const [show, setShow] = React.useState(false);
 
-  /* // TODO
+  //* // TODO
   const refInput = React.useRef();
 
   const atShowClick = () => {
@@ -26,6 +26,7 @@ function UseRefExample(){
     <div className="ref-example-component">
       <section>
         <button onClick={atShowClick}>show input</button>
+        {/* {<input ref = {refInput} value="123" /> } */}
         <button onClick={()=> setCount(count+1)}>+1</button>
         {
           show && <input ref={refInput} />
