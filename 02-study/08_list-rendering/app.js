@@ -22,6 +22,27 @@ function List(){
     </div>
   )
   // */
+
+  const [list, setList] = React.useState(['學會 JS', '學會 React', '年薪百萬']);
+  const atAddClick = () => {
+    // list.push(new Date().toString());
+    // setList(list);
+    // console.log(list);
+    var newList = list.concat(new Date().toString());
+    setList(newList);
+  }
+  return (
+    <div>
+      <button onClick={atAddClick}>Add</button>
+      <ol className="list">
+      {
+        list.map(function (text) {
+          return <li key={text}>{text}</li>;
+        })
+      }
+      </ol>
+    </div>
+  )
 }
 
 ReactDOM.render(
